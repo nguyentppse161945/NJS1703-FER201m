@@ -36,3 +36,147 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left; 
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .active {
+  background-color: #04AA6D;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+  nav {
+    flex-direction: column; 
+  }
+
+  nav li {
+    float: none;
+    width: 100%;
+  }
+
+  nav li a {
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+  }
+
+}
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px; right: 10px;
+  }
+  
+  nav {
+    display: none;
+    position: absolute;
+    /* animate sliding in from top */
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+}
+/* Player Card Styling */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 10px;
+} 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card h3{
+  margin-left: 10px;
+}
+
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 600px) {
+
+  .column {
+    flex: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+ 
+  .column {
+    flex: 100%;
+  }
+
+}
+
+.footer h3{
+  background-color:yellowgreen;
+  display: block;
+  text-align: center;
+}
