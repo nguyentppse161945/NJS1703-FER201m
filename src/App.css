@@ -64,9 +64,9 @@ nav li a:hover {
   background-color: #111;
 }
 
-nav .active {
+/* nav .active {
   background-color: #04aa6d;
-}
+} */
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
@@ -86,7 +86,7 @@ nav .active {
 }
 /* Hamburger Menu Icon */
 .hamburger {
-  display: none;
+  display: flex;
 }
 
 @media only screen and (max-width: 600px) {
