@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import PlayersList from "../Share/ListOfPlayers";
+import {dataa} from "../Share/ListOfPlayers";
 export default function PlayersPresentation({ players }) {
   const [player, setPlayer] = useState([]);
   return (
     <div className="container">
-      {PlayersList.map((player) => (
+      {dataa.map((player) => (
         <div className="column" key={player.id}>
           <div className="card">
             <img src={player.img} />

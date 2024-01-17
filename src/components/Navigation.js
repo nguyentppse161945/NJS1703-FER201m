@@ -14,7 +14,7 @@ export default function Navigation() {
       <div style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
       <ul >
           <li>
-            <a className="active" href="#home"  style={style}>
+            <a className="active" href="/"  style={style}>
               Home
             </a>
           </li>
@@ -25,7 +25,7 @@ export default function Navigation() {
             <a href="#about" style={style}>About</a>
           </li>
           <li>
-            <a href="#contact" style={style}>Contact</a>
+            <a href="contact" style={style}>Contact</a>
           </li>
         
         </ul>
